@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout | Mr Grocery Mart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/cart.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">Mr Grocery Mart</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="checkout-section">
+  <h2>Checkout</h2>
+  <form id="checkout-form">
+    <label>Name:</label>
+    <input type="text" required>
+    <label>Email:</label>
+    <input type="email" required>
+    <label>Address:</label>
+    <textarea required></textarea>
+    <button type="submit" class="btn">Place Order</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 Mr Grocery Mart</p>
+</footer>
+</body>
+</html>

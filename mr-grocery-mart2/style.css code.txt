@@ -1,0 +1,17 @@
+body {margin:0;font-family:Arial,sans-serif;background:#f5f5f5;}
+header {background:#27ae60;padding:15px;display:flex;justify-content:space-between;align-items:center;}
+header .logo{color:#fff;font-size:22px;font-weight:bold;}
+header nav a{color:#fff;margin:0 10px;text-decoration:none;font-weight:bold;}
+.banner{width:100%;max-height:400px;object-fit:cover;}
+.hero{text-align:center;padding:50px 20px;color:#fff;}
+.hero .btn{background:#fff;color:#27ae60;padding:10px 20px;text-decoration:none;font-weight:bold;border-radius:5px;}
+.product-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:20px;}
+.product{background:#fff;padding:15px;border-radius:8px;width:220px;text-align:center;}
+.product img{width:100%;height:150px;object-fit:cover;border-radius:5px;}
+.product button{margin-top:10px;padding:5px 10px;background:#27ae60;color:#fff;border:none;border-radius:5px;cursor:pointer;}
+.product button:hover{background:#2ecc71;}
+footer{background:#222;color:#fff;text-align:center;padding:15px;margin-top:40px;}
+table{width:90%;margin:auto;border-collapse:collapse;background:#fff;margin-bottom:20px;}
+th,td{padding:10px;text-align:center;border:1px solid #ddd;}
+.btn{background:#27ae60;color:#fff;padding:10px 20px;text-decoration:none;border-radius:5px;display:inline-block;margin:10px 0;}
+input,textarea{width:100%;padding:8px;margin:5px 0;border-radius:5px;border:1px solid #ccc;}

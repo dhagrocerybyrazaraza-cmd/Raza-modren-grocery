@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mr Grocery Mart</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+<header>
+  <div class="logo">Mr Grocery Mart</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="cart.html">Cart</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <img src="images/banner.jpg" alt="Banner" class="banner">
+  <div class="hero-text">
+    <h1>Fresh & Quality Groceries Delivered</h1>
+    <p>Your daily essentials at best prices!</p>
+    <a href="products.html" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<section class="featured-products">
+  <h2>Featured Products</h2>
+  <div class="product-grid">
+    <div class="product">
+      <img src="images/product1.jpg" alt="Product 1">
+      <h3>Fresh Apples</h3>
+      <p>$2.99 / kg</p>
+      <button onclick="addToCart('Fresh Apples',2.99)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/product2.jpg" alt="Product 2">
+      <h3>Organic Milk</h3>
+      <p>$1.50 / litre</p>
+      <button onclick="addToCart('Organic Milk',1.50)">Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="images/product3.jpg" alt="Product 3">
+      <h3>Basmati Rice</h3>
+      <p>$4.20 / kg</p>
+      <button onclick="addToCart('Basmati Rice',4.20)">Add to Cart</button>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Mr Grocery Mart</p>
+</footer>
+</body>
+</html>

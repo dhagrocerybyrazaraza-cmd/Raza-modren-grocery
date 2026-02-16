@@ -1,0 +1,45 @@
+// cart.js
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function addToCart(name, price) {
+  let product = cart.find(p => p.name === name);
+  if (product) {
+    product.qty += 1;
+  } else {
+    cart.push({name: name, price: price, qty: 1});
+  }
+  localStorage.setItem('cart', JSON.stringify(cart));
+  alert(`${name} added to cart!`);
+  renderCart();
+}
+
+function removeFromCart(index) {
+  cart.splice(index, 1);
+  localStorage.setItem('cart', JSON.stringify(cart));
+  renderCart();
+}
+
+function renderCart() {
+  let tableBody = document.querySelector("#cart-table tbody");
+  if (!tableBody) return;
+  tableBody.innerHTML = '';
+  let total = 0;
+  cart.forEach((item, i) => {
+    let row = document.createElement('tr');
+    let itemTotal = (item.price * item.qty).toFixed(2);
+    total += parseFloat(itemTotal);
+    row.innerHTML = `
+      <td>${item.name}</td>
+      <td>$${item.price}</td>
+      <td>${item.qty}</td>
+      <td>$${itemTotal}</td>
+      <td><button onclick="removeFromCart(${i})">Remove</button></td>
+    `;
+    tableBody.appendChild(row);
+  });
+  let totalEl = document.getElementById('cart-total');
+  if (totalEl) totalEl.textContent = total.toFixed(2);
+}
+
+// Render cart if cart page
+document.addEventListener('DOMContentLoaded', renderCart);
